@@ -12,7 +12,7 @@ import java.util.*;
 // 所有方法都回傳數據給瀏覽器，如果回傳是Object則轉換為JSON
 @ResponseBody
 @Controller
-public class HelloController  extends TimerTask{
+public class HelloController {
     
     String[]googleMeet={"https://meet.google.com/uks-ejza-rrk",
                         "https://reurl.cc/Dv1vWe",
@@ -25,13 +25,6 @@ public class HelloController  extends TimerTask{
                         "https://meet.google.com/igv-skby-kga"};
 
     int num;
-    public void run(){
-		if(num%2==1){
-            num++;
-            System.out.println("num"+num);
-        }
-    }
-    
     @RequestMapping(value = "/hello3")
     public void hello3(HttpServletResponse response) throws IOException {
         if(num>googleMeet.length){  
@@ -52,7 +45,7 @@ public class HelloController  extends TimerTask{
 
     }
     @RequestMapping(value = "/hello")
-    public String hello() throws IOException {
+    public String hello(){
         return "hello jacky";
 
     }
