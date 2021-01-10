@@ -33,7 +33,7 @@ public class HelloController  extends TimerTask{
     }
     
     @RequestMapping(value = "/hello3")
-    public void hello(HttpServletResponse response) throws IOException {
+    public void hello3(HttpServletResponse response) throws IOException {
         if(num>googleMeet.length){  
             num=0;
         }else{
@@ -52,7 +52,7 @@ public class HelloController  extends TimerTask{
 
     }
     @RequestMapping(value = "/hello")
-    public String hello1(HttpServletResponse response) throws IOException {
+    public String hello() throws IOException {
         return "hello jacky";
 
     }
