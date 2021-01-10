@@ -1,0 +1,6 @@
+version: '3'
+services:
+  oms:
+    image: bc8aa9b8e2c1
+    ports:
+      - 8081:8080
